@@ -1,0 +1,10 @@
+// Module依赖关系统一配置项
+def build_version = [:]
+
+build_version.compileSdkVersion = 29
+build_version.buildToolsVersion = 29
+build_version.minSdkVersion = 23
+build_version.targetSdkVersion = 29
+build_version.buildToolsVersion = "29.0.2"
+
+ext.build_version = build_version

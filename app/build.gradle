@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    compileSdkVersion build_version.compileSdkVersion
+    buildToolsVersion build_version.buildToolsVersion
 
     defaultConfig {
         applicationId "com.muxi.rockandroiddemo"
-        minSdkVersion 23
-        targetSdkVersion 29
+        minSdkVersion build_version.minSdkVersion
+        targetSdkVersion build_version.targetSdkVersion
         versionCode 1
         versionName "1.0"
 

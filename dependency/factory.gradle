@@ -1,4 +1,4 @@
-def configureRepo(RepositoryHandler handler) {
+def repo(RepositoryHandler handler) {
     handler.maven {
         url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
     }
@@ -17,4 +17,4 @@ def configureRepo(RepositoryHandler handler) {
     }
 }
 
-ext.configureRepo = this.&configureRepo
+ext.configureRepo = this.&repo

@@ -3,7 +3,8 @@
 buildscript {
 
     apply from: './dependency/factory.gradle'
-    configureRepo(repositories)
+    apply from: './dependency/dependencies.gradle'//加载dependencies.gradle
+    ext.configureRepo(repositories)
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.2'
         // NOTE: Do not place your application dependencies here; they belong
