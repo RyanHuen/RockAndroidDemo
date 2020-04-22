@@ -18,6 +18,7 @@ import org.gradle.api.Project;
  * 2020/4/22 : 11:50
  */
 public class DepConfigure implements Plugin<Project> {
+
     @Override
     public void apply(Project project) {
 

@@ -1,6 +1,5 @@
 package com.muxi.dependency;
 
-import com.muxi.dependency.test.Test;
 import com.muxi.dependency.version.DepVersion;
 
 import org.gradle.api.Action;
@@ -23,26 +22,59 @@ import org.gradle.api.Project;
  */
 public class DepConfigureExtension {
 
-    public int compileSdkVersion;
-    public int minSdkVersion;
-    public int targetSdkVersion;
-    public String buildToolsVersion;
+    private int compileSdkVersion;
+    private int minSdkVersion;
+    private int targetSdkVersion;
+    private String buildToolsVersion;
 
-    public NamedDomainObjectContainer<DepVersion> depVersions;
-    public NamedDomainObjectContainer<Test> test;
+    private NamedDomainObjectContainer<DepVersion> depVersions;
 
     public DepConfigureExtension(Project project) {
         NamedDomainObjectContainer<DepVersion> depVersions = project.container(DepVersion.class);
-        NamedDomainObjectContainer<Test> test = project.container(Test.class);
         this.depVersions = depVersions;
-        this.test = test;
+    }
+
+    public int getCompileSdkVersion() {
+        return compileSdkVersion;
+    }
+
+    public void setCompileSdkVersion(int compileSdkVersion) {
+        this.compileSdkVersion = compileSdkVersion;
+    }
+
+    public int getMinSdkVersion() {
+        return minSdkVersion;
+    }
+
+    public void setMinSdkVersion(int minSdkVersion) {
+        this.minSdkVersion = minSdkVersion;
+    }
+
+    public int getTargetSdkVersion() {
+        return targetSdkVersion;
+    }
+
+    public void setTargetSdkVersion(int targetSdkVersion) {
+        this.targetSdkVersion = targetSdkVersion;
+    }
+
+    public String getBuildToolsVersion() {
+        return buildToolsVersion;
+    }
+
+    public void setBuildToolsVersion(String buildToolsVersion) {
+        this.buildToolsVersion = buildToolsVersion;
+    }
+
+    public NamedDomainObjectContainer<DepVersion> getDepVersions() {
+        return depVersions;
+    }
+
+    public void setDepVersions(NamedDomainObjectContainer<DepVersion> depVersions) {
+        this.depVersions = depVersions;
     }
 
     public void depVersions(Action<? super NamedDomainObjectContainer<DepVersion>> action) {
         action.execute(depVersions);
-    }
-
-    public void test(Action<? super NamedDomainObjectContainer<Test>> action) {
-        action.execute(test);
     }
 }
