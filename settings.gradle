@@ -1,2 +1,3 @@
 rootProject.name='RockAndroidDemo'
 include ':app'
+include ':dependency'
