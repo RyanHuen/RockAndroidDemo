@@ -15,7 +15,6 @@ buildscript {
 }
 
 allprojects {
-    println 'all'
     configureRepo(repositories)
 }
 
