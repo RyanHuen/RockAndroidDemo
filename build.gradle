@@ -3,19 +3,19 @@ apply plugin: 'easy_dependencies'
 apply from: "./dependency/dependencies.gradle"
 
 buildscript {
-
+    apply from: "./dependency/classpath.gradle"
     apply from: "./dependency/repository.gradle"
     configureRepo(repositories)
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.2'
-        classpath 'com.ryanhuen.easy_dependencies:easydependencies:1.0.3'
+        classpath rootProject.classpath.android_gradle
+        classpath rootProject.classpath.easy_dep
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
 
 allprojects {
-
+    println 'all'
     configureRepo(repositories)
 }
 

@@ -1,0 +1,6 @@
+ext {
+    classpath = [:]
+}
+
+ext.classpath.android_gradle = 'com.android.tools.build:gradle:3.6.2'
+ext.classpath.easy_dep = 'com.ryanhuen.easy_dependencies:easydependencies:1.0.3'

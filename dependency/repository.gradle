@@ -1,4 +1,5 @@
 def configureRepo(RepositoryHandler handler) {
+    println 'gg'
     handler.maven {
         url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
     }
