@@ -34,4 +34,5 @@ dependencies {
     implementation easyDep.groups.androidx.nodes.appcompat.dep
     implementation easyDep.groups.androidx.nodes.constraintlayout.dep
     implementation easyDep.groups.okhttp3.nodes.okhttp.dep
+    implementation easyDep.groups.rx.nodes.rxjava3.dep
 }

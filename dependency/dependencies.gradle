@@ -41,5 +41,13 @@ easyDep {
                 }
             }
         }
+        rx {
+            nodes {
+                rxjava3 {
+                    alias 'io.reactivex.rxjava3:rxjava'
+                    version '3.0.1'
+                }
+            }
+        }
     }
 }

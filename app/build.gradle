@@ -27,9 +27,12 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation easyDep.groups.androidx.nodes.appcompat.dep
-    implementation easyDep.groups.androidx.nodes.constraintlayout.dep
     testImplementation easyDep.groups.unit_test.nodes.junit.dep
     androidTestImplementation easyDep.groups.unit_test.nodes.ext_junit.dep
     androidTestImplementation easyDep.groups.unit_test.nodes.espresso_core.dep
+
+    implementation easyDep.groups.androidx.nodes.appcompat.dep
+    implementation easyDep.groups.androidx.nodes.constraintlayout.dep
+
+    implementation project(':rocknet')
 }
