@@ -1,19 +1,14 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 apply plugin: 'easy_dependencies'
-apply from: "./config/dependencies.gradle"
+apply from: "./dependency/dependencies.gradle"
 
 buildscript {
 
-    repositories {
-        google()
-        jcenter()
-        maven {
-            url 'https://dl.bintray.com/ryanhuen/RyanHuen'
-        }
-    }
+    apply from: "./dependency/repository.gradle"
+    configureRepo(repositories)
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.2'
-        classpath 'com.ryanhuen.easy_dependencies:easydependencies:1.0.0'
+        classpath 'com.ryanhuen.easy_dependencies:easydependencies:1.0.3'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -21,13 +16,7 @@ buildscript {
 
 allprojects {
 
-    repositories {
-        google()
-        jcenter()
-        maven {
-            url 'https://dl.bintray.com/ryanhuen/RyanHuen'
-        }
-    }
+    configureRepo(repositories)
 }
 
 task clean(type: Delete) {
