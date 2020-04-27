@@ -1,3 +1,5 @@
 rootProject.name='RockAndroidDemo'
 include ':app'
 include ':rocknet'
+include ':rockandroidutils'
+include ':RockJavaUtils'

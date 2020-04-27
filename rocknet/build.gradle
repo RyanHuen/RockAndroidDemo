@@ -20,7 +20,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -35,4 +38,7 @@ dependencies {
     implementation easyDep.groups.androidx.nodes.constraintlayout.dep
     implementation easyDep.groups.okhttp3.nodes.okhttp.dep
     implementation easyDep.groups.rx.nodes.rxjava3.dep
+
+    implementation project(':RockJavaUtils')
+    implementation project(':rockandroidutils')
 }
