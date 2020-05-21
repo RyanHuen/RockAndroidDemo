@@ -4,3 +4,4 @@ ext {
 
 ext.classpath.android_gradle = 'com.android.tools.build:gradle:3.6.2'
 ext.classpath.easy_dep = 'com.ryanhuen.easy_dependencies:easydependencies:1.0.3'
+ext.classpath.kotlin_gradle_plugin='org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.72'
