@@ -62,6 +62,5 @@ class ListUtilUnitTest {
         println("非null null比较：" + ListUtil.equals(modifyList, equalsB))
         println("源和sub之后相同数据的源equals比较：" + ListUtil.equals(modifyList, ListUtil.subList(modifyList, toIndex = 50)))
         println("源和sub之后新数据equals比较：" + ListUtil.equals(modifyList, ListUtil.subList(modifyList, 1, 3)))
-
     }
 }
