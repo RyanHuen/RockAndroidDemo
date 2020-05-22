@@ -1,2 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ryanhuen.rockkotlindemo" />
+    package="com.ryanhuen.rockkotlindemo">
+
+    <application>
+        <activity android:name=".KotlinDemoEntry"></activity>
+        <activity android:name=".pic.PicCoroutineActivity" />
+    </application>
+
+</manifest>

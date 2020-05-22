@@ -4,27 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".KotlinDemoEntry">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/rock_net"
+            android:id="@+id/couroutine_thread_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RockNet"
-            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="协程打印线程"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/kotlin_demo"
+            android:id="@+id/couroutine_pic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CouroutinDemo"
-            app:layout_constraintStart_toEndOf="@+id/rock_net"
+            android:text="协程加载图片"
+            app:layout_constraintStart_toEndOf="@+id/couroutine_thread_name"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>

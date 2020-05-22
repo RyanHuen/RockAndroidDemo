@@ -28,6 +28,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation easyDep.groups.unit_test.nodes.junit.dep
 
     androidTestImplementation easyDep.groups.unit_test.nodes.ext_junit.dep
@@ -35,4 +37,7 @@ dependencies {
     implementation easyDep.groups.androidx.nodes.appcompat.dep
     implementation easyDep.groups.androidx.nodes.core_ktx.dep
     implementation easyDep.groups.kotlin.nodes.kotlin_stdlib_jdk7.dep
+    implementation easyDep.groups.kotlin.nodes.corotines_core.dep
+    implementation easyDep.groups.kotlin.nodes.corotines_android.dep
+    implementation easyDep.groups.glide.nodes.glide.dep
 }

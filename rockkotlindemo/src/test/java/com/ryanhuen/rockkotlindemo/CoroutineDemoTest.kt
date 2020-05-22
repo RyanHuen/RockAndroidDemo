@@ -1,5 +1,7 @@
 package com.ryanhuen.rockkotlindemo
 
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import org.junit.Test
 
 /**
@@ -22,8 +24,10 @@ class CoroutineDemoTest {
     @Test
     fun coroutineDemoTest() {
 
+        GlobalScope.launch {
+            println("current thread" + Thread.currentThread().name)
+        }
     }
-
 
 
 }

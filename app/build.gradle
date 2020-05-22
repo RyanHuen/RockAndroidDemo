@@ -40,4 +40,5 @@ dependencies {
     implementation easyDep.groups.androidx.nodes.constraintlayout.dep
 
     implementation project(':rocknet')
+    implementation project(':rockkotlindemo')
 }
