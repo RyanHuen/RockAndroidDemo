@@ -3,7 +3,8 @@
     package="com.ryanhuen.rockkotlindemo">
 
     <application>
-        <activity android:name=".KotlinDemoEntry"></activity>
+        <activity android:name=".pic.SlicePicCoroutineActivity"></activity>
+        <activity android:name=".KotlinDemoEntry" />
         <activity android:name=".pic.PicCoroutineActivity" />
     </application>
 

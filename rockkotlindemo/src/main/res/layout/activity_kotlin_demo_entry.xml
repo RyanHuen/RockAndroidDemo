@@ -26,6 +26,13 @@
             app:layout_constraintStart_toEndOf="@+id/couroutine_thread_name"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <Button
+            android:id="@+id/couroutine_slice_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="协程切割显示图片"
+            app:layout_constraintStart_toEndOf="@+id/couroutine_pic"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

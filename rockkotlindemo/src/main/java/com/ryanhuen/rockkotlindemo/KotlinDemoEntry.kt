@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.ryanhuen.rockkotlindemo.pic.PicCoroutineActivity
+import com.ryanhuen.rockkotlindemo.pic.SlicePicCoroutineActivity
 
 class KotlinDemoEntry : AppCompatActivity() {
 
@@ -17,6 +18,9 @@ class KotlinDemoEntry : AppCompatActivity() {
         }
         findViewById<Button>(R.id.couroutine_pic).setOnClickListener {
             startActivity(Intent(this, PicCoroutineActivity::class.java))
+        }
+        findViewById<Button>(R.id.couroutine_slice_pic).setOnClickListener {
+            startActivity(Intent(this, SlicePicCoroutineActivity::class.java))
         }
     }
 }
